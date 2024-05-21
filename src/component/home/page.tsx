@@ -1,5 +1,5 @@
-import Link from "next/link";
-import React from "react";
+import Link from 'next/link';
+import React from 'react';
 
 export default function Home() {
   return (
@@ -553,7 +553,7 @@ export default function Home() {
                       href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor"
                       className="edu-btn btn-secondary btn-small"
                     >
-                      Дэлгэрэнгүй{" "}
+                      Дэлгэрэнгүй{' '}
                       <i className="material-icons">arrow_forward</i>
                     </Link>
                   </div>
@@ -609,7 +609,7 @@ export default function Home() {
                       href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor"
                       className="edu-btn btn-secondary btn-small"
                     >
-                      Дэлгэрэнгүй{" "}
+                      Дэлгэрэнгүй{' '}
                       <i className="material-icons">arrow_forward</i>
                     </Link>
                   </div>
@@ -634,7 +634,7 @@ export default function Home() {
                       href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor"
                       className="edu-btn btn-secondary btn-small"
                     >
-                      Дэлгэрэнгүй{" "}
+                      Дэлгэрэнгүй{' '}
                       <i className="material-icons">arrow_forward</i>
                     </Link>
                   </div>
@@ -659,7 +659,7 @@ export default function Home() {
                       href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor"
                       className="edu-btn btn-secondary btn-small"
                     >
-                      Дэлгэрэнгүй{" "}
+                      Дэлгэрэнгүй{' '}
                       <i className="material-icons">arrow_forward</i>
                     </Link>
                   </div>
@@ -715,7 +715,7 @@ export default function Home() {
                       href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor"
                       className="edu-btn btn-secondary btn-small"
                     >
-                      Дэлгэрэнгүй{" "}
+                      Дэлгэрэнгүй{' '}
                       <i className="material-icons">arrow_forward</i>
                     </Link>
                   </div>
@@ -740,7 +740,7 @@ export default function Home() {
                       href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor"
                       className="edu-btn btn-secondary btn-small"
                     >
-                      Дэлгэрэнгүй{" "}
+                      Дэлгэрэнгүй{' '}
                       <i className="material-icons">arrow_forward</i>
                     </Link>
                   </div>
@@ -765,7 +765,7 @@ export default function Home() {
                       href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor"
                       className="edu-btn btn-secondary btn-small"
                     >
-                      Дэлгэрэнгүй{" "}
+                      Дэлгэрэнгүй{' '}
                       <i className="material-icons">arrow_forward</i>
                     </Link>
                   </div>
@@ -793,7 +793,7 @@ export default function Home() {
                           href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor"
                           className="edu-btn btn-secondary btn-small"
                         >
-                          Дэлгэрэнгүй{" "}
+                          Дэлгэрэнгүй{' '}
                           <i className="material-icons">arrow_forward</i>
                         </Link>
                       </div>
@@ -819,7 +819,7 @@ export default function Home() {
                           href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor"
                           className="edu-btn btn-secondary btn-small"
                         >
-                          Дэлгэрэнгүй{" "}
+                          Дэлгэрэнгүй{' '}
                           <i className="material-icons">arrow_forward</i>
                         </Link>
                       </div>
@@ -845,7 +845,7 @@ export default function Home() {
                           href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor"
                           className="edu-btn btn-secondary btn-small"
                         >
-                          Дэлгэрэнгүй{" "}
+                          Дэлгэрэнгүй{' '}
                           <i className="material-icons">arrow_forward</i>
                         </Link>
                       </div>
@@ -868,7 +868,7 @@ export default function Home() {
                       href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor"
                       className="edu-btn btn-secondary btn-small"
                     >
-                      Дэлгэрэнгүй{" "}
+                      Дэлгэрэнгүй{' '}
                       <i className="material-icons">arrow_forward</i>
                     </Link>
                   </div>
@@ -927,7 +927,7 @@ export default function Home() {
                       href="https://www.facebook.com/narssummercamp"
                       className="edu-btn btn-secondary btn-small"
                     >
-                      Дэлгэрэнгүй{" "}
+                      Дэлгэрэнгүй{' '}
                       <i className="material-icons">arrow_forward</i>
                     </Link>
                   </div>
@@ -1231,39 +1231,40 @@ export default function Home() {
                   id="id47bt"
                 />
               </div>
-              <div className="brand-grid" />
-              <img
-                src="https://office.erxes.io/gateway/read-file?key=0.119550675824645629.jpg"
-                alt="Brand Logo"
-                id="id47bt-2"
-              />
-            </div>
-            <div className="brand-grid">
-              <img
-                src="https://office.erxes.io/gateway/read-file?key=0.826485926104954410.png"
-                alt="Brand Logo"
-                id="id47bt-3"
-              />
-            </div>
-            <div className="brand-grid">
-              <img
-                src="https://office.erxes.io/gateway/read-file?key=0.3449210527492241311.png"
-                alt="Brand Logo"
-                id="id47bt-4"
-              />
-            </div>
-            <div className="brand-grid">
-              <img
-                src="https://office.erxes.io/gateway/read-file?key=0.945780280960394312.png"
-                alt="Brand Logo"
-                id="id47bt-5"
-              />
-            </div>
-            <div className="brand-grid">
-              <img
-                id="igyrka"
-                src="https://narscamp.api.erxes.io/api/read-file?key=erxes-saas/ZxvVYG6k2oDm6xOqnv2Mr259907-18082020-1597737515-855436432-shineehlel1.jpg"
-              />
+              <div className="brand-grid">
+                <img
+                  src="https://office.erxes.io/gateway/read-file?key=0.119550675824645629.jpg"
+                  alt="Brand Logo"
+                  id="id47bt-2"
+                />
+              </div>
+              <div className="brand-grid">
+                <img
+                  src="https://office.erxes.io/gateway/read-file?key=0.826485926104954410.png"
+                  alt="Brand Logo"
+                  id="id47bt-3"
+                />
+              </div>
+              <div className="brand-grid">
+                <img
+                  src="https://office.erxes.io/gateway/read-file?key=0.3449210527492241311.png"
+                  alt="Brand Logo"
+                  id="id47bt-4"
+                />
+              </div>
+              <div className="brand-grid">
+                <img
+                  src="https://office.erxes.io/gateway/read-file?key=0.945780280960394312.png"
+                  alt="Brand Logo"
+                  id="id47bt-5"
+                />
+              </div>
+              <div className="brand-grid">
+                <img
+                  id="igyrka"
+                  src="https://narscamp.api.erxes.io/api/read-file?key=erxes-saas/ZxvVYG6k2oDm6xOqnv2Mr259907-18082020-1597737515-855436432-shineehlel1.jpg"
+                />
+              </div>
             </div>
           </div>
         </div>
