@@ -1,5 +1,9 @@
-import Link from 'next/link';
-import React from 'react';
+"use client";
+import Link from "next/link";
+import React from "react";
+import styled, { keyframes } from "styled-components";
+import { useInView } from "react-intersection-observer";
+import ScrollAnimationComponent from "../animate/page";
 
 export default function Home() {
   return (
@@ -83,35 +87,46 @@ export default function Home() {
                 </ul>
               </div>
             </div>
+
             <div
               data-sal-delay="150"
               data-sal="slide-left"
               data-sal-duration="800"
               className="col-lg-6 sal-animate"
             >
-              <div className="about-content">
-                <div className="section-title section-left">
-                  <h2 className="title">
-                    2024 оны зуны ээлжийн бүртгэл эхэллээ
-                  </h2>
-                  <span className="shape-line">
-                    <i className="icon-19"></i>
-                  </span>
-                </div>
-                <div
-                  data-sal-delay="150"
-                  data-sal="slide-up"
-                  data-sal-duration="1200"
-                  className="course-view-all sal-animate"
-                >
-                  <Link
-                    href="https://forms.gle/NLtyv6nFUq8umCR57"
-                    className="edu-btn"
+              <ScrollAnimationComponent>
+                <div className="about-content">
+                  <div className="section-title section-left">
+                    <h2
+                      className="title"
+                      style={{
+                        maxWidth: "350px",
+                        fontSize: "28px",
+                        fontWeight: "700",
+                      }}
+                    >
+                      2024 оны зуны ээлжийн бүртгэл эхэллээ
+                    </h2>
+                    <span className="shape-line">
+                      <i className="icon-19"></i>
+                    </span>
+                  </div>
+                  <div
+                    data-sal-delay="150"
+                    data-sal="slide-up"
+                    data-sal-duration="1200"
+                    className="course-view-all sal-animate"
                   >
-                    Бүртгүүлэх<i className="material-icons">arrow_forward</i>
-                  </Link>
+                    <Link
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSfCDmPcYAMm-YJgVhVnBNJ_mn56du2Iyhjsd7vKGGM35UzhBA/viewform"
+                      className="edu-btn"
+                      style={{ textDecoration: "none" }}
+                    >
+                      Бүртгүүлэх<i className="material-icons">arrow_forward</i>
+                    </Link>
+                  </div>
                 </div>
-              </div>
+              </ScrollAnimationComponent>
             </div>
           </div>
           <ul className="shape-group">
@@ -127,9 +142,20 @@ export default function Home() {
         </div>
       </div>
       <div id="features" className="features-area-2">
-        <div className="container">
-          <h2 className="text-center text-white pt-40">Бидний үнэт зүйлс</h2>
-          <div className="features-grid-wrap">
+        <div
+          className="container"
+          style={{ maxWidth: "1185px", height: "350px" }}
+        >
+          <h2
+            className="text-center text-white pt-40"
+            style={{ fontSize: "26px", fontWeight: "700" }}
+          >
+            Бидний үнэт зүйлс
+          </h2>
+          <div
+            className="features-grid-wrap"
+            style={{ maxWidth: "1170px", height: "140px" }}
+          >
             <div className="features-box features-style-2 edublink-svg-animate">
               <div className="icon">
                 <img
@@ -139,7 +165,10 @@ export default function Home() {
                 />
               </div>
               <div className="content">
-                <h5 className="title">
+                <h5
+                  className="title"
+                  style={{ fontSize: "20px", fontWeight: "400" }}
+                >
                   Зуслангийн хамт
                   <br /> олон
                 </h5>
@@ -154,7 +183,10 @@ export default function Home() {
                 />
               </div>
               <div className="content">
-                <h5 className="title">
+                <h5
+                  className="title"
+                  style={{ fontSize: "20px", fontWeight: "400" }}
+                >
                   Хамтран ажиллагч
                   <br /> байгууллагууд
                 </h5>
@@ -169,7 +201,12 @@ export default function Home() {
                 />
               </div>
               <div className="content">
-                <h5 className="title">Олон улсын харилцаа</h5>
+                <h5
+                  className="title"
+                  style={{ fontSize: "20px", fontWeight: "400" }}
+                >
+                  Олон улсын харилцаа
+                </h5>
               </div>
             </div>
             <div className="features-box features-style-2 edublink-svg-animate">
@@ -181,7 +218,12 @@ export default function Home() {
                 />
               </div>
               <div className="content">
-                <h5 className="title">Амрагчид, эцэг эхчүүд</h5>
+                <h5
+                  className="title"
+                  style={{ fontSize: "20px", fontWeight: "400" }}
+                >
+                  Амрагчид, эцэг эхчүүд
+                </h5>
               </div>
             </div>
           </div>
@@ -192,14 +234,19 @@ export default function Home() {
         id="club"
         className="edu-categorie-area categorie-area-2 edu-section-gap"
       >
-        <div className="container">
+        <div className="container" style={{ maxWidth: "1185px" }}>
           <div
             data-sal-delay="150"
             data-sal="slide-up"
             data-sal-duration="800"
             className="section-title section-center sal-animate"
           >
-            <h2 className="title">Клубын төрлүүд</h2>
+            <h2
+              className="title"
+              style={{ fontSize: "26px", fontWeight: "700" }}
+            >
+              Клубын төрлүүд
+            </h2>
             <span className="shape-line">
               <i className="icon-19"></i>
             </span>
@@ -226,7 +273,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="content">
-                  <Link href="#club">
+                  <Link href="#club" style={{ textDecoration: "none" }}>
                     <h5 className="title">Соёл урлагийн клуб</h5>
                   </Link>
                 </div>
@@ -246,7 +293,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="content">
-                  <Link href="#club">
+                  <Link href="#club" style={{ textDecoration: "none" }}>
                     <h5 className="title">Спортын клуб</h5>
                   </Link>
                 </div>
@@ -266,7 +313,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="content">
-                  <Link href="#club">
+                  <Link href="#club" style={{ textDecoration: "none" }}>
                     <h5 className="title">Оюун ухааны клуб</h5>
                   </Link>
                 </div>
@@ -286,7 +333,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="content">
-                  <Link href="#club">
+                  <Link href="#club" style={{ textDecoration: "none" }}>
                     <h5 className="title">Гадаад хэлний клуб</h5>
                   </Link>
                 </div>
@@ -306,7 +353,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="content">
-                  <Link href="#club">
+                  <Link href="#club" style={{ textDecoration: "none" }}>
                     <h5 className="title">Бүтээлч клуб</h5>
                   </Link>
                 </div>
@@ -326,7 +373,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="content">
-                  <Link href="#club">
+                  <Link href="#club" style={{ textDecoration: "none" }}>
                     <h5 className="title">
                       Өсвөрийн сэтгүүлч, гэрэл зургийн клуб
                     </h5>
@@ -348,7 +395,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="content">
-                  <Link href="#club">
+                  <Link href="#club" style={{ textDecoration: "none" }}>
                     <h5 className="title">Аялалын клуб</h5>
                   </Link>
                 </div>
@@ -357,6 +404,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <div id="about" className="gap-bottom-equal edu-about-area about-style-1">
         <div className="container edublink-animated-shape">
           <div className="row g-5 align-items-center">
@@ -440,33 +488,49 @@ export default function Home() {
               data-sal-duration="800"
               className="col-lg-6 sal-animate"
             >
-              <div className="about-content">
-                <div className="section-title section-left">
-                  <span className="pre-title">Бидний тухай</span>
-                  <h2 className="title">Манай зуслан</h2>
-                  <span className="shape-line">
-                    <i className="icon-19"></i>
-                  </span>
-                  <p>
-                    Олон улсын Хүүхэд хөгжлийн Нарс зуслан нь 1984 онд
-                    байгуулагдсан. Манай зуслан нь Хангайн нурууны баруун өмнөд
-                    салбар уулсад далайн түвшнээс дээш 1400 метрын өндөрт нарсан
-                    ойн дунд оршдог. СХД-ын 24-р хороо, Баруун салааны байгалийн
-                    үзэсгэлэнт Баянсогоотын аманд, Улаанбаатар хотын төвөөс 20
-                    км-ын зайд байрладаг.
-                  </p>
+              <ScrollAnimationComponent>
+                <div className="about-content">
+                  <div className="section-title section-left">
+                    <span
+                      className="pre-title"
+                      style={{ fontSize: "15px", color: "gray" }}
+                    >
+                      Бидний тухай
+                    </span>
+                    <h2
+                      className="title"
+                      style={{ fontSize: "22px", fontWeight: "700" }}
+                    >
+                      Манай зуслан
+                    </h2>
+                    <span className="shape-line">
+                      <i className="icon-19"></i>
+                    </span>
+                    <p className="w-[400px]" style={{ maxWidth: "550px" }}>
+                      Олон улсын Хүүхэд хөгжлийн Нарс зуслан нь 1984 онд
+                      байгуулагдсан. Манай зуслан нь Хангайн нурууны баруун
+                      өмнөд салбар уулсад далайн түвшнээс дээш 1400 метрын
+                      өндөрт нарсан ойн дунд оршдог. СХД-ын 24-р хороо, Баруун
+                      салааны байгалийн үзэсгэлэнт Баянсогоотын аманд,
+                      Улаанбаатар хотын төвөөс 20 км-ын зайд байрладаг.
+                    </p>
+                  </div>
+                  <div
+                    data-sal-delay="150"
+                    data-sal="slide-up"
+                    data-sal-duration="1200"
+                    className="course-view-all sal-animate"
+                  >
+                    <Link
+                      href="#about"
+                      className="edu-btn"
+                      style={{ textDecoration: "none" }}
+                    >
+                      Дэлгэрэнгүй<i className="material-icons">arrow_forward</i>
+                    </Link>
+                  </div>
                 </div>
-                <div
-                  data-sal-delay="150"
-                  data-sal="slide-up"
-                  data-sal-duration="1200"
-                  className="course-view-all sal-animate"
-                >
-                  <Link href="#about" className="edu-btn">
-                    Дэлгэрэнгүй<i className="material-icons">arrow_forward</i>
-                  </Link>
-                </div>
-              </div>
+              </ScrollAnimationComponent>
             </div>
           </div>
           <ul className="shape-group">
@@ -481,18 +545,24 @@ export default function Home() {
           </ul>
         </div>
       </div>
+
       <div
         id="course"
         className="edu-course-area course-area-1 edu-section-gap bg-lighten01"
       >
-        <div className="container">
+        <div className="container" style={{ maxWidth: "1185px" }}>
           <div
             data-sal-delay="150"
             data-sal="slide-up"
             data-sal-duration="800"
             className="section-title section-center sal-animate"
           >
-            <h2 className="title">Онцлох хөтөлбөрүүд</h2>
+            <h2
+              className="title"
+              style={{ fontSize: "26px", fontWeight: "700" }}
+            >
+              Онцлох хөтөлбөрүүд
+            </h2>
             <span className="shape-line">
               <i className="icon-19"></i>
             </span>
@@ -516,7 +586,14 @@ export default function Home() {
                   </div>
                   <div className="content">
                     <h6 className="title">
-                      <Link href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor">
+                      <Link
+                        style={{
+                          textDecoration: "none",
+                          fontSize: "14px",
+                          fontWeight: "600",
+                        }}
+                        href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor"
+                      >
                         Nars got talent
                       </Link>
                     </h6>
@@ -531,6 +608,11 @@ export default function Home() {
                   <div className="content">
                     <h6 className="title">
                       <Link
+                        style={{
+                          textDecoration: "none",
+                          fontSize: "14px",
+                          fontWeight: "600",
+                        }}
                         href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor"
                         id="ixwlml"
                       >
@@ -550,10 +632,11 @@ export default function Home() {
                       урлаг соёлын боловсролыг түгээхэд оршино.
                     </p>
                     <Link
+                      style={{ textDecoration: "none" }}
                       href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor"
                       className="edu-btn btn-secondary btn-small"
                     >
-                      Дэлгэрэнгүй{' '}
+                      Дэлгэрэнгүй{" "}
                       <i className="material-icons">arrow_forward</i>
                     </Link>
                   </div>
@@ -578,7 +661,14 @@ export default function Home() {
                   </div>
                   <div className="content">
                     <h6 className="title">
-                      <Link href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor">
+                      <Link
+                        style={{
+                          textDecoration: "none",
+                          fontSize: "14px",
+                          fontWeight: "600",
+                        }}
+                        href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor"
+                      >
                         Хананд авиралт
                       </Link>
                     </h6>
@@ -589,10 +679,18 @@ export default function Home() {
                     <i className="icon-22"></i>
                   </button>
                 </div>
+
                 <div className="course-hover-content">
                   <div className="content">
                     <h6 className="title">
-                      <Link href="https://www.facebook.com/narssummercamp">
+                      <Link
+                        style={{
+                          textDecoration: "none",
+                          fontSize: "14px",
+                          fontWeight: "600",
+                        }}
+                        href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor"
+                      >
                         Хананд авиралт
                       </Link>
                     </h6>
@@ -608,58 +706,11 @@ export default function Home() {
                     <Link
                       href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor"
                       className="edu-btn btn-secondary btn-small"
+                      style={{
+                        textDecoration: "none",
+                      }}
                     >
-                      Дэлгэрэнгүй{' '}
-                      <i className="material-icons">arrow_forward</i>
-                    </Link>
-                  </div>
-                </div>
-                <div className="course-hover-content">
-                  <div className="content">
-                    <h6 className="title">
-                      <Link href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor">
-                        Хананд авиралт
-                      </Link>
-                    </h6>
-                    <p>
-                      Спорт авиралтаар хичээллэх нь хүний биеийн хурд, хүчийг
-                      нэмэгдүүлж, нүдний харааг сайжруулж, тэсвэр хатуужилтай
-                      болгодог. Мөн сэтгэхүйг хөгжүүлэх, хэцүү нөхцөлөөс
-                      боломжийг олж харах, саад бэрхшээлийг даван туулах чадварт
-                      сургадаг. Энэ спорт нь хөл гарын үзүүр дээр тогтдог учир
-                      биеийн болон сэтгэхүйн тэнцвэртэй байдлыг шаарддаг экстрем
-                      спорт юм.
-                    </p>
-                    <Link
-                      href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor"
-                      className="edu-btn btn-secondary btn-small"
-                    >
-                      Дэлгэрэнгүй{' '}
-                      <i className="material-icons">arrow_forward</i>
-                    </Link>
-                  </div>
-                </div>
-                <div className="course-hover-content">
-                  <div className="content">
-                    <h6 className="title">
-                      <Link href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor">
-                        Хананд авиралт
-                      </Link>
-                    </h6>
-                    <p>
-                      Спорт авиралтаар хичээллэх нь хүний биеийн хурд, хүчийг
-                      нэмэгдүүлж, нүдний харааг сайжруулж, тэсвэр хатуужилтай
-                      болгодог. Мөн сэтгэхүйг хөгжүүлэх, хэцүү нөхцөлөөс
-                      боломжийг олж харах, саад бэрхшээлийг даван туулах чадварт
-                      сургадаг. Энэ спорт нь хөл гарын үзүүр дээр тогтдог учир
-                      биеийн болон сэтгэхүйн тэнцвэртэй байдлыг шаарддаг экстрем
-                      спорт юм.
-                    </p>
-                    <Link
-                      href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor"
-                      className="edu-btn btn-secondary btn-small"
-                    >
-                      Дэлгэрэнгүй{' '}
+                      Дэлгэрэнгүй{" "}
                       <i className="material-icons">arrow_forward</i>
                     </Link>
                   </div>
@@ -684,7 +735,14 @@ export default function Home() {
                   </div>
                   <div className="content">
                     <h6 className="title">
-                      <Link href="https://www.facebook.com/narssummercamp">
+                      <Link
+                        style={{
+                          textDecoration: "none",
+                          fontSize: "14px",
+                          fontWeight: "600",
+                        }}
+                        href="https://www.facebook.com/narssummercamp"
+                      >
                         Явган аялалын хөтөлбөр
                       </Link>
                     </h6>
@@ -698,7 +756,14 @@ export default function Home() {
                 <div className="course-hover-content">
                   <div className="content">
                     <h6 className="title">
-                      <Link href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor">
+                      <Link
+                        style={{
+                          textDecoration: "none",
+                          fontSize: "14px",
+                          fontWeight: "600",
+                        }}
+                        href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor"
+                      >
                         Явган аялалын хөтөлбөр
                       </Link>
                     </h6>
@@ -714,161 +779,11 @@ export default function Home() {
                     <Link
                       href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor"
                       className="edu-btn btn-secondary btn-small"
+                      style={{
+                        textDecoration: "none",
+                      }}
                     >
-                      Дэлгэрэнгүй{' '}
-                      <i className="material-icons">arrow_forward</i>
-                    </Link>
-                  </div>
-                </div>
-                <div className="course-hover-content">
-                  <div className="content">
-                    <h6 className="title">
-                      <Link href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor">
-                        Явган аялалын хөтөлбөр
-                      </Link>
-                    </h6>
-                    <p>
-                      Нарс зуслан нь нарс модоор хүрээлэгдсэн ойн төгөлд
-                      байрладаг. Нарс мод хүний дархлааг сайжруулдаг
-                      интерфероныг /Хүний биед гаднаас вирус гэх мэт биет орж
-                      ирэхэд түүнийг эсэргүүцэн зайлуулах гэж ялгардаг бодис/
-                      ялгаруулдаг цорын ганц мод юм. Ой модонд алхахад хүний бие
-                      эрүүлжиж, стресс тайлагдан, тайван болж, байгалийн хүчил
-                      төрөгч хүний бие организмыг дотроос нь цэвэрлэж байдаг.
-                    </p>
-                    <Link
-                      href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor"
-                      className="edu-btn btn-secondary btn-small"
-                    >
-                      Дэлгэрэнгүй{' '}
-                      <i className="material-icons">arrow_forward</i>
-                    </Link>
-                  </div>
-                </div>
-                <div className="course-hover-content">
-                  <div className="content">
-                    <h6 className="title">
-                      <Link href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor">
-                        Явган аялалын хөтөлбөр
-                      </Link>
-                    </h6>
-                    <p>
-                      Нарс зуслан нь нарс модоор хүрээлэгдсэн ойн төгөлд
-                      байрладаг. Нарс мод хүний дархлааг сайжруулдаг
-                      интерфероныг /Хүний биед гаднаас вирус гэх мэт биет орж
-                      ирэхэд түүнийг эсэргүүцэн зайлуулах гэж ялгардаг бодис/
-                      ялгаруулдаг цорын ганц мод юм. Ой модонд алхахад хүний бие
-                      эрүүлжиж, стресс тайлагдан, тайван болж, байгалийн хүчил
-                      төрөгч хүний бие организмыг дотроос нь цэвэрлэж байдаг.
-                    </p>
-                    <Link
-                      href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor"
-                      className="edu-btn btn-secondary btn-small"
-                    >
-                      Дэлгэрэнгүй{' '}
-                      <i className="material-icons">arrow_forward</i>
-                    </Link>
-                  </div>
-                </div>
-                <div className="course-hover-content">
-                  <div className="content">
-                    <div className="course-hover-content">
-                      <div className="content">
-                        <h6 className="title">
-                          <Link href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor">
-                            Явган аялалын хөтөлбөр
-                          </Link>
-                        </h6>
-                        <p>
-                          Нарс зуслан нь нарс модоор хүрээлэгдсэн ойн төгөлд
-                          байрладаг. Нарс мод хүний дархлааг сайжруулдаг
-                          интерфероныг /Хүний биед гаднаас вирус гэх мэт биет
-                          орж ирэхэд түүнийг эсэргүүцэн зайлуулах гэж ялгардаг
-                          бодис/ ялгаруулдаг цорын ганц мод юм. Ой модонд
-                          алхахад хүний бие эрүүлжиж, стресс тайлагдан, тайван
-                          болж, байгалийн хүчил төрөгч хүний бие организмыг
-                          дотроос нь цэвэрлэж байдаг.
-                        </p>
-                        <Link
-                          href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor"
-                          className="edu-btn btn-secondary btn-small"
-                        >
-                          Дэлгэрэнгүй{' '}
-                          <i className="material-icons">arrow_forward</i>
-                        </Link>
-                      </div>
-                    </div>
-                    <div className="course-hover-content">
-                      <div className="content">
-                        <h6 className="title">
-                          <Link href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor">
-                            Явган аялалын хөтөлбөр
-                          </Link>
-                        </h6>
-                        <p>
-                          Нарс зуслан нь нарс модоор хүрээлэгдсэн ойн төгөлд
-                          байрладаг. Нарс мод хүний дархлааг сайжруулдаг
-                          интерфероныг /Хүний биед гаднаас вирус гэх мэт биет
-                          орж ирэхэд түүнийг эсэргүүцэн зайлуулах гэж ялгардаг
-                          бодис/ ялгаруулдаг цорын ганц мод юм. Ой модонд
-                          алхахад хүний бие эрүүлжиж, стресс тайлагдан, тайван
-                          болж, байгалийн хүчил төрөгч хүний бие организмыг
-                          дотроос нь цэвэрлэж байдаг.
-                        </p>
-                        <Link
-                          href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor"
-                          className="edu-btn btn-secondary btn-small"
-                        >
-                          Дэлгэрэнгүй{' '}
-                          <i className="material-icons">arrow_forward</i>
-                        </Link>
-                      </div>
-                    </div>
-                    <div className="course-hover-content">
-                      <div className="content">
-                        <h6 className="title">
-                          <Link href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor">
-                            Явган аялалын хөтөлбөр
-                          </Link>
-                        </h6>
-                        <p>
-                          Нарс зуслан нь нарс модоор хүрээлэгдсэн ойн төгөлд
-                          байрладаг. Нарс мод хүний дархлааг сайжруулдаг
-                          интерфероныг /Хүний биед гаднаас вирус гэх мэт биет
-                          орж ирэхэд түүнийг эсэргүүцэн зайлуулах гэж ялгардаг
-                          бодис/ ялгаруулдаг цорын ганц мод юм. Ой модонд
-                          алхахад хүний бие эрүүлжиж, стресс тайлагдан, тайван
-                          болж, байгалийн хүчил төрөгч хүний бие организмыг
-                          дотроос нь цэвэрлэж байдаг.
-                        </p>
-                        <Link
-                          href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor"
-                          className="edu-btn btn-secondary btn-small"
-                        >
-                          Дэлгэрэнгүй{' '}
-                          <i className="material-icons">arrow_forward</i>
-                        </Link>
-                      </div>
-                    </div>
-                    <h6 className="title">
-                      <Link href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor">
-                        Явган аялалын хөтөлбөр
-                      </Link>
-                    </h6>
-                    <p>
-                      Нарс зуслан нь нарс модоор хүрээлэгдсэн ойн төгөлд
-                      байрладаг. Нарс мод хүний дархлааг сайжруулдаг
-                      интерфероныг /Хүний биед гаднаас вирус гэх мэт биет орж
-                      ирэхэд түүнийг эсэргүүцэн зайлуулах гэж ялгардаг бодис/
-                      ялгаруулдаг цорын ганц мод юм. Ой модонд алхахад хүний бие
-                      эрүүлжиж, стресс тайлагдан, тайван болж, байгалийн хүчил
-                      төрөгч хүний бие организмыг дотроос нь цэвэрлэж байдаг.
-                    </p>
-                    <Link
-                      href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor"
-                      className="edu-btn btn-secondary btn-small"
-                    >
-                      Дэлгэрэнгүй{' '}
+                      Дэлгэрэнгүй{" "}
                       <i className="material-icons">arrow_forward</i>
                     </Link>
                   </div>
@@ -896,7 +811,14 @@ export default function Home() {
                   </div>
                   <div className="content">
                     <h6 className="title">
-                      <Link href="https://www.facebook.com/narssummercamp">
+                      <Link
+                        style={{
+                          textDecoration: "none",
+                          fontSize: "14px",
+                          fontWeight: "600",
+                        }}
+                        href="https://www.facebook.com/narssummercamp"
+                      >
                         Хөлөгт тоглоом
                       </Link>
                     </h6>
@@ -910,7 +832,14 @@ export default function Home() {
                 <div className="course-hover-content">
                   <div className="content">
                     <h6 className="title">
-                      <Link href="https://www.facebook.com/narssummercamp">
+                      <Link
+                        style={{
+                          textDecoration: "none",
+                          fontSize: "14px",
+                          fontWeight: "600",
+                        }}
+                        href="https://www.facebook.com/narssummercamp"
+                      >
                         Хөлөгт тоглоом
                       </Link>
                     </h6>
@@ -926,8 +855,11 @@ export default function Home() {
                     <Link
                       href="https://www.facebook.com/narssummercamp"
                       className="edu-btn btn-secondary btn-small"
+                      style={{
+                        textDecoration: "none",
+                      }}
                     >
-                      Дэлгэрэнгүй{' '}
+                      Дэлгэрэнгүй{" "}
                       <i className="material-icons">arrow_forward</i>
                     </Link>
                   </div>
@@ -945,6 +877,9 @@ export default function Home() {
             <Link
               href="https://www.facebook.com/narssummercamp"
               className="edu-btn"
+              style={{
+                textDecoration: "none",
+              }}
             >
               Бүх хөтөлбөрүүд<i className="material-icons">arrow_forward</i>
             </Link>
@@ -960,7 +895,12 @@ export default function Home() {
             data-sal-duration="800"
             className="section-title section-center sal-animate"
           >
-            <h2 className="title">Эцэг эхийн булан</h2>
+            <h2
+              className="title"
+              style={{ fontSize: "28px", fontWeight: "700" }}
+            >
+              Эцэг эхийн булан
+            </h2>
             <span className="shape-line">
               <i className="icon-19"></i>
             </span>
@@ -984,12 +924,25 @@ export default function Home() {
                   </div>
                   <div className="content position-top">
                     <div className="read-more-btn">
-                      <Link href="/parents-detail" className="btn-icon-round">
+                      <Link
+                        href="/parents-detail"
+                        className="btn-icon-round"
+                        style={{
+                          textDecoration: "none",
+                        }}
+                      >
                         <i className="material-icons">arrow_forward</i>
                       </Link>
                     </div>
                     <h5 className="title pb-10">
-                      <Link href="/parents-detail">
+                      <Link
+                        href="/parents-detail"
+                        style={{
+                          textDecoration: "none",
+                          fontSize: "16px",
+                          fontWeight: "600",
+                        }}
+                      >
                         Зусланд амрагч хүүхдийн бэлдэх зүйлс :
                       </Link>
                     </h5>
@@ -1024,12 +977,25 @@ export default function Home() {
                   </div>
                   <div className="content position-top">
                     <div className="read-more-btn">
-                      <Link href="/parents-detail" className="btn-icon-round">
+                      <Link
+                        href="/parents-detail"
+                        className="btn-icon-round"
+                        style={{
+                          textDecoration: "none",
+                        }}
+                      >
                         <i className="material-icons">arrow_forward</i>
                       </Link>
                     </div>
                     <h5 className="title pb-10">
-                      <Link href="/parents-detail">
+                      <Link
+                        href="/parents-detail"
+                        style={{
+                          textDecoration: "none",
+                          fontSize: "16px",
+                          fontWeight: "600",
+                        }}
+                      >
                         Зусланд амрагч хүүхдийн мөрдөх дүрэм :
                       </Link>
                     </h5>
@@ -1062,11 +1028,25 @@ export default function Home() {
                   <div className="content position-top">
                     <div className="read-more-btn">
                       <Link href="/parents-detail" className="btn-icon-round">
-                        <i className="material-icons">arrow_forward</i>
+                        <i
+                          className="material-icons"
+                          style={{
+                            textDecoration: "none",
+                          }}
+                        >
+                          arrow_forward
+                        </i>
                       </Link>
                     </div>
                     <h5 className="title pb-10">
-                      <Link href="/parents-detail">
+                      <Link
+                        href="/parents-detail"
+                        style={{
+                          textDecoration: "none",
+                          fontSize: "16px",
+                          fontWeight: "600",
+                        }}
+                      >
                         Зусланд амрагч хүүхэд эцэг эхчүүдийн анхаарах зүйлс :
                       </Link>
                     </h5>
@@ -1103,6 +1083,7 @@ export default function Home() {
           </li>
         </ul>
       </div>
+
       <div id="contact" className="home-one-cta-two cta-area-1">
         <div className="container">
           <div className="row justify-content-center px-50">
@@ -1166,7 +1147,15 @@ export default function Home() {
                 data-sal-duration="800"
                 className="section-title section-left sal-animate"
               >
-                <h2 className="title text-center">Хамтрагч байгууллагууд</h2>
+                <h2
+                  className="title text-center"
+                  style={{
+                    fontSize: "28px",
+                    fontWeight: "700",
+                  }}
+                >
+                  Хамтрагч байгууллагууд
+                </h2>
                 <span className="shape-line">
                   <i className="icon-19"></i>
                 </span>

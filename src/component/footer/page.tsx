@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="edu-footer footer-lighten bg-image footer-style-1">
       <div className="footer-top">
-        <div className="container">
+        <div className="container" style={{ maxWidth: "1185px" }}>
           <div className="row g-5">
             <div className="col-lg-4 col-md-6">
               <div className="edu-footer-widget">
@@ -45,7 +45,12 @@ export default function Footer() {
             </div>
             <div className="col-lg-4 col-sm-6">
               <div className="edu-footer-widget explore-widget">
-                <h4 className="widget-title">Дотоод холбоосууд</h4>
+                <h4
+                  className="widget-title"
+                  style={{ fontSize: "20px", fontWeight: "700" }}
+                >
+                  Дотоод холбоосууд
+                </h4>
                 <div className="inner">
                   <ul className="footer-link link-hover">
                     <li>
@@ -58,7 +63,7 @@ export default function Footer() {
                       <a href="#contact">Холбоо барих</a>
                     </li>
                     <li>
-                      <a href="https://forms.gle/NLtyv6nFUq8umCR57">
+                      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfCDmPcYAMm-YJgVhVnBNJ_mn56du2Iyhjsd7vKGGM35UzhBA/viewform">
                         Бүртгүүлэх
                       </a>
                     </li>
@@ -68,7 +73,12 @@ export default function Footer() {
             </div>
             <div className="col-lg-4 col-sm-6">
               <div className="edu-footer-widget quick-link-widget">
-                <h4 className="widget-title">Сошиал холбоосууд</h4>
+                <h4
+                  className="widget-title"
+                  style={{ fontSize: "20px", fontWeight: "700" }}
+                >
+                  Сошиал холбоосууд
+                </h4>
                 <div className="inner">
                   <ul className="footer-link link-hover">
                     <li>

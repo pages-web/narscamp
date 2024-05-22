@@ -35,7 +35,10 @@ export default function ParentsDetail() {
             <div className="col-lg-12">
               <div className="course-details-content course-details-2">
                 <div className="course-overview">
-                  <h3 className="heading-title">
+                  <h3
+                    className="heading-title"
+                    style={{ fontSize: "22px", fontWeight: "700" }}
+                  >
                     Зусланд амрагч хүүхдүүд, эцэг эхчүүдийн анхаарах зүйлс :
                   </h3>
                   <ul>
@@ -80,7 +83,10 @@ export default function ParentsDetail() {
                       id="iz64vy"
                     />
                   </p>
-                  <h3 className="heading-title">
+                  <h3
+                    className="heading-title"
+                    style={{ fontSize: "22px", fontWeight: "700" }}
+                  >
                     Зусланд амрагч хүүхдийн бэлдэх зүйлс :
                   </h3>
                   <ul>
@@ -114,8 +120,11 @@ export default function ParentsDetail() {
                       id="iz64vy-2"
                     />
                   </p>
-                  <h3 className="heading-title">
-                    Нарс зусланд амрагч хүүхдийн дагаж мөрдөх дотоод журам
+                  <h3
+                    className="heading-title"
+                    style={{ fontSize: "22px", fontWeight: "700" }}
+                  >
+                    Нарс зусланд амрагч хүүхдийн дагаж мөрдөх дотоод журам:
                   </h3>
                   <p>
                     Хүүхдийг цэвэр аюулгүй, ая тухтай орчинд амруулах, тэдний

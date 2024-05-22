@@ -1,7 +1,14 @@
-import React from "react";
+"use client";
+import React, { use } from "react";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Header() {
+  const [isClick, setIsClick] = useState(false);
+
+  const handleClick = () => {
+    setIsClick((previousState) => !previousState);
+  };
   return (
     <header className="edu-header header-style-1 header-fullwidth">
       <div id="edu-sticky-placeholder"></div>
@@ -43,7 +50,10 @@ export default function Header() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="https://forms.gle/NLtyv6nFUq8umCR57" id="i95h3">
+                    <Link
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSfCDmPcYAMm-YJgVhVnBNJ_mn56du2Iyhjsd7vKGGM35UzhBA/viewform"
+                      id="i95h3"
+                    >
                       Бүртгүүлэх
                     </Link>
                   </li>
@@ -76,8 +86,8 @@ export default function Header() {
                   </Link>
                 </li>
                 <li className="mobile-menu-bar d-block d-xl-none">
-                  <button className="hamberger-button">
-                    <i className="fa-solid fa-bars"> </i>
+                  <button className="hamberger-button" onClick={handleClick}>
+                    <i className="fa-solid fa-bars"></i>
                   </button>
                 </li>
               </ul>
@@ -85,46 +95,50 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div className="mobile-menu mto-10 p-10 w-300 bg-main ml-300 hidden">
-        <ul>
-          <li>
-            <Link href="https://narscamp.mn/" className="text-white">
-              Нүүр
-            </Link>
-          </li>
-          <li>
-            <Link href="#about" className="text-white">
-              Бидний Тухай
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&utm_campaign=designshare&utm_medium=link&utm_source=editor"
-              className="text-white"
-            >
-              Хөтөлбөрүүд
-            </Link>
-          </li>
-          <li>
-            <Link href="#club" className="text-white">
-              Клубүүд
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="https://forms.gle/NLtyv6nFUq8umCR57"
-              className="text-white"
-            >
-              Бүртгүүлэх
-            </Link>
-          </li>
-          <li>
-            <Link href="#contact" className="text-white">
-              Холбоо барих
-            </Link>
-          </li>
-        </ul>
-      </div>
+      {isClick ? (
+        <div className="mobile-menu mto-10 p-10 w-300 bg-main ml-300">
+          <ul>
+            <li>
+              <Link href="https://narscamp.mn/" className="text-white">
+                Нүүр
+              </Link>
+            </li>
+            <li>
+              <Link href="#about" className="text-white">
+                Бидний Тухай
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+                className="text-white"
+              >
+                Хөтөлбөрүүд
+              </Link>
+            </li>
+            <li>
+              <Link href="#club" className="text-white">
+                Клубүүд
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfCDmPcYAMm-YJgVhVnBNJ_mn56du2Iyhjsd7vKGGM35UzhBA/viewform"
+                className="text-white"
+              >
+                Бүртгүүлэх
+              </Link>
+            </li>
+            <li>
+              <Link href="#contact" className="text-white">
+                Холбоо барих
+              </Link>
+            </li>
+          </ul>
+        </div>
+      ) : (
+        ""
+      )}
     </header>
   );
 }
