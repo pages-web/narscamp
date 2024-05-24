@@ -23,10 +23,13 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <img
-        id="icxrwm"
-        src="https://narscamp.api.erxes.io/api/read-file?key=erxes-saas/Log0KuyXd0Zb5xfmcwgbPNars Schedule.jpg"
-      />
+      <div className="max-w-4xl">
+        <img
+          id="icxrwm"
+          src="https://narscamp.api.erxes.io/api/read-file?key=erxes-saas/Log0KuyXd0Zb5xfmcwgbPNars Schedule.jpg"
+          className="w-full"
+        />
+      </div>
 
       <div
         id="signUp"
