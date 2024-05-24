@@ -23,7 +23,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="max-w-4xl">
+      <div className="container max-w-screen-lg">
         <img
           id="icxrwm"
           src="https://narscamp.api.erxes.io/api/read-file?key=erxes-saas/Log0KuyXd0Zb5xfmcwgbPNars Schedule.jpg"
