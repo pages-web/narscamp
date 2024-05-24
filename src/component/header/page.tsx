@@ -1,13 +1,13 @@
-"use client";
-import React, { use } from "react";
-import Link from "next/link";
-import { useState } from "react";
+'use client';
+import React, { use } from 'react';
+import Link from 'next/link';
+import { useState } from 'react';
 
 export default function Header() {
   const [isClick, setIsClick] = useState(false);
 
   const handleClick = () => {
-    setIsClick((previousState) => !previousState);
+    setIsClick(previousState => !previousState);
   };
   return (
     <header className="edu-header header-style-1 header-fullwidth">
@@ -51,7 +51,7 @@ export default function Header() {
                   </li>
                   <li>
                     <Link
-                      href="https://docs.google.com/forms/d/e/1FAIpQLSfCDmPcYAMm-YJgVhVnBNJ_mn56du2Iyhjsd7vKGGM35UzhBA/viewform"
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSfPnOx6MA4EOijexuRPdz70OqKzumzdEAjGc9yXqTfd17FPDA/viewform"
                       id="i95h3"
                     >
                       Бүртгүүлэх
@@ -123,7 +123,7 @@ export default function Header() {
             </li>
             <li>
               <Link
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfCDmPcYAMm-YJgVhVnBNJ_mn56du2Iyhjsd7vKGGM35UzhBA/viewform"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfPnOx6MA4EOijexuRPdz70OqKzumzdEAjGc9yXqTfd17FPDA/viewform"
                 className="text-white"
               >
                 Бүртгүүлэх
@@ -137,7 +137,7 @@ export default function Header() {
           </ul>
         </div>
       ) : (
-        ""
+        ''
       )}
     </header>
   );

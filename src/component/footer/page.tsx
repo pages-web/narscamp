@@ -63,7 +63,7 @@ export default function Footer() {
                       <a href="#contact">Холбоо барих</a>
                     </li>
                     <li>
-                      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfCDmPcYAMm-YJgVhVnBNJ_mn56du2Iyhjsd7vKGGM35UzhBA/viewform">
+                      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPnOx6MA4EOijexuRPdz70OqKzumzdEAjGc9yXqTfd17FPDA/viewform">
                         Бүртгүүлэх
                       </a>
                     </li>

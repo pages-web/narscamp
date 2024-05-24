@@ -1,9 +1,9 @@
-"use client";
-import Link from "next/link";
-import React from "react";
-import styled, { keyframes } from "styled-components";
-import { useInView } from "react-intersection-observer";
-import ScrollAnimationComponent from "../animate/page";
+'use client';
+import Link from 'next/link';
+import React from 'react';
+import styled, { keyframes } from 'styled-components';
+import { useInView } from 'react-intersection-observer';
+import ScrollAnimationComponent from '../animate/page';
 
 export default function Home() {
   return (
@@ -100,9 +100,9 @@ export default function Home() {
                     <h2
                       className="title"
                       style={{
-                        maxWidth: "350px",
-                        fontSize: "28px",
-                        fontWeight: "700",
+                        maxWidth: '350px',
+                        fontSize: '28px',
+                        fontWeight: '700'
                       }}
                     >
                       2024 оны зуны ээлжийн бүртгэл эхэллээ
@@ -118,9 +118,9 @@ export default function Home() {
                     className="course-view-all sal-animate"
                   >
                     <Link
-                      href="https://docs.google.com/forms/d/e/1FAIpQLSfCDmPcYAMm-YJgVhVnBNJ_mn56du2Iyhjsd7vKGGM35UzhBA/viewform"
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSfPnOx6MA4EOijexuRPdz70OqKzumzdEAjGc9yXqTfd17FPDA/viewform"
                       className="edu-btn"
-                      style={{ textDecoration: "none" }}
+                      style={{ textDecoration: 'none' }}
                     >
                       Бүртгүүлэх<i className="material-icons">arrow_forward</i>
                     </Link>
@@ -144,17 +144,17 @@ export default function Home() {
       <div id="features" className="features-area-2">
         <div
           className="container"
-          style={{ maxWidth: "1185px", height: "350px" }}
+          style={{ maxWidth: '1185px', height: '350px' }}
         >
           <h2
             className="text-center text-white pt-40"
-            style={{ fontSize: "26px", fontWeight: "700" }}
+            style={{ fontSize: '26px', fontWeight: '700' }}
           >
             Бидний үнэт зүйлс
           </h2>
           <div
             className="features-grid-wrap"
-            style={{ maxWidth: "1170px", height: "140px" }}
+            style={{ maxWidth: '1170px', height: '140px' }}
           >
             <div className="features-box features-style-2 edublink-svg-animate">
               <div className="icon">
@@ -167,7 +167,7 @@ export default function Home() {
               <div className="content">
                 <h5
                   className="title"
-                  style={{ fontSize: "20px", fontWeight: "400" }}
+                  style={{ fontSize: '20px', fontWeight: '400' }}
                 >
                   Зуслангийн хамт
                   <br /> олон
@@ -185,7 +185,7 @@ export default function Home() {
               <div className="content">
                 <h5
                   className="title"
-                  style={{ fontSize: "20px", fontWeight: "400" }}
+                  style={{ fontSize: '20px', fontWeight: '400' }}
                 >
                   Хамтран ажиллагч
                   <br /> байгууллагууд
@@ -203,7 +203,7 @@ export default function Home() {
               <div className="content">
                 <h5
                   className="title"
-                  style={{ fontSize: "20px", fontWeight: "400" }}
+                  style={{ fontSize: '20px', fontWeight: '400' }}
                 >
                   Олон улсын харилцаа
                 </h5>
@@ -220,7 +220,7 @@ export default function Home() {
               <div className="content">
                 <h5
                   className="title"
-                  style={{ fontSize: "20px", fontWeight: "400" }}
+                  style={{ fontSize: '20px', fontWeight: '400' }}
                 >
                   Амрагчид, эцэг эхчүүд
                 </h5>
@@ -234,7 +234,7 @@ export default function Home() {
         id="club"
         className="edu-categorie-area categorie-area-2 edu-section-gap"
       >
-        <div className="container" style={{ maxWidth: "1185px" }}>
+        <div className="container" style={{ maxWidth: '1185px' }}>
           <div
             data-sal-delay="150"
             data-sal="slide-up"
@@ -243,7 +243,7 @@ export default function Home() {
           >
             <h2
               className="title"
-              style={{ fontSize: "26px", fontWeight: "700" }}
+              style={{ fontSize: '26px', fontWeight: '700' }}
             >
               Клубын төрлүүд
             </h2>
@@ -273,7 +273,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="content">
-                  <Link href="#club" style={{ textDecoration: "none" }}>
+                  <Link href="#club" style={{ textDecoration: 'none' }}>
                     <h5 className="title">Соёл урлагийн клуб</h5>
                   </Link>
                 </div>
@@ -293,7 +293,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="content">
-                  <Link href="#club" style={{ textDecoration: "none" }}>
+                  <Link href="#club" style={{ textDecoration: 'none' }}>
                     <h5 className="title">Спортын клуб</h5>
                   </Link>
                 </div>
@@ -313,7 +313,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="content">
-                  <Link href="#club" style={{ textDecoration: "none" }}>
+                  <Link href="#club" style={{ textDecoration: 'none' }}>
                     <h5 className="title">Оюун ухааны клуб</h5>
                   </Link>
                 </div>
@@ -333,7 +333,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="content">
-                  <Link href="#club" style={{ textDecoration: "none" }}>
+                  <Link href="#club" style={{ textDecoration: 'none' }}>
                     <h5 className="title">Гадаад хэлний клуб</h5>
                   </Link>
                 </div>
@@ -353,7 +353,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="content">
-                  <Link href="#club" style={{ textDecoration: "none" }}>
+                  <Link href="#club" style={{ textDecoration: 'none' }}>
                     <h5 className="title">Бүтээлч клуб</h5>
                   </Link>
                 </div>
@@ -373,7 +373,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="content">
-                  <Link href="#club" style={{ textDecoration: "none" }}>
+                  <Link href="#club" style={{ textDecoration: 'none' }}>
                     <h5 className="title">
                       Өсвөрийн сэтгүүлч, гэрэл зургийн клуб
                     </h5>
@@ -395,7 +395,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="content">
-                  <Link href="#club" style={{ textDecoration: "none" }}>
+                  <Link href="#club" style={{ textDecoration: 'none' }}>
                     <h5 className="title">Аялалын клуб</h5>
                   </Link>
                 </div>
@@ -493,20 +493,20 @@ export default function Home() {
                   <div className="section-title section-left">
                     <span
                       className="pre-title"
-                      style={{ fontSize: "15px", color: "gray" }}
+                      style={{ fontSize: '15px', color: 'gray' }}
                     >
                       Бидний тухай
                     </span>
                     <h2
                       className="title"
-                      style={{ fontSize: "22px", fontWeight: "700" }}
+                      style={{ fontSize: '22px', fontWeight: '700' }}
                     >
                       Манай зуслан
                     </h2>
                     <span className="shape-line">
                       <i className="icon-19"></i>
                     </span>
-                    <p className="w-[400px]" style={{ maxWidth: "550px" }}>
+                    <p className="w-[400px]" style={{ maxWidth: '550px' }}>
                       Олон улсын Хүүхэд хөгжлийн Нарс зуслан нь 1984 онд
                       байгуулагдсан. Манай зуслан нь Хангайн нурууны баруун
                       өмнөд салбар уулсад далайн түвшнээс дээш 1400 метрын
@@ -524,7 +524,7 @@ export default function Home() {
                     <Link
                       href="#about"
                       className="edu-btn"
-                      style={{ textDecoration: "none" }}
+                      style={{ textDecoration: 'none' }}
                     >
                       Дэлгэрэнгүй<i className="material-icons">arrow_forward</i>
                     </Link>
@@ -550,7 +550,7 @@ export default function Home() {
         id="course"
         className="edu-course-area course-area-1 edu-section-gap bg-lighten01"
       >
-        <div className="container" style={{ maxWidth: "1185px" }}>
+        <div className="container" style={{ maxWidth: '1185px' }}>
           <div
             data-sal-delay="150"
             data-sal="slide-up"
@@ -559,7 +559,7 @@ export default function Home() {
           >
             <h2
               className="title"
-              style={{ fontSize: "26px", fontWeight: "700" }}
+              style={{ fontSize: '26px', fontWeight: '700' }}
             >
               Онцлох хөтөлбөрүүд
             </h2>
@@ -588,9 +588,9 @@ export default function Home() {
                     <h6 className="title">
                       <Link
                         style={{
-                          textDecoration: "none",
-                          fontSize: "14px",
-                          fontWeight: "600",
+                          textDecoration: 'none',
+                          fontSize: '14px',
+                          fontWeight: '600'
                         }}
                         href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor"
                       >
@@ -609,9 +609,9 @@ export default function Home() {
                     <h6 className="title">
                       <Link
                         style={{
-                          textDecoration: "none",
-                          fontSize: "14px",
-                          fontWeight: "600",
+                          textDecoration: 'none',
+                          fontSize: '14px',
+                          fontWeight: '600'
                         }}
                         href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor"
                         id="ixwlml"
@@ -632,11 +632,11 @@ export default function Home() {
                       урлаг соёлын боловсролыг түгээхэд оршино.
                     </p>
                     <Link
-                      style={{ textDecoration: "none" }}
+                      style={{ textDecoration: 'none' }}
                       href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor"
                       className="edu-btn btn-secondary btn-small"
                     >
-                      Дэлгэрэнгүй{" "}
+                      Дэлгэрэнгүй{' '}
                       <i className="material-icons">arrow_forward</i>
                     </Link>
                   </div>
@@ -663,9 +663,9 @@ export default function Home() {
                     <h6 className="title">
                       <Link
                         style={{
-                          textDecoration: "none",
-                          fontSize: "14px",
-                          fontWeight: "600",
+                          textDecoration: 'none',
+                          fontSize: '14px',
+                          fontWeight: '600'
                         }}
                         href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor"
                       >
@@ -685,9 +685,9 @@ export default function Home() {
                     <h6 className="title">
                       <Link
                         style={{
-                          textDecoration: "none",
-                          fontSize: "14px",
-                          fontWeight: "600",
+                          textDecoration: 'none',
+                          fontSize: '14px',
+                          fontWeight: '600'
                         }}
                         href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor"
                       >
@@ -707,10 +707,10 @@ export default function Home() {
                       href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor"
                       className="edu-btn btn-secondary btn-small"
                       style={{
-                        textDecoration: "none",
+                        textDecoration: 'none'
                       }}
                     >
-                      Дэлгэрэнгүй{" "}
+                      Дэлгэрэнгүй{' '}
                       <i className="material-icons">arrow_forward</i>
                     </Link>
                   </div>
@@ -737,9 +737,9 @@ export default function Home() {
                     <h6 className="title">
                       <Link
                         style={{
-                          textDecoration: "none",
-                          fontSize: "14px",
-                          fontWeight: "600",
+                          textDecoration: 'none',
+                          fontSize: '14px',
+                          fontWeight: '600'
                         }}
                         href="https://www.facebook.com/narssummercamp"
                       >
@@ -758,9 +758,9 @@ export default function Home() {
                     <h6 className="title">
                       <Link
                         style={{
-                          textDecoration: "none",
-                          fontSize: "14px",
-                          fontWeight: "600",
+                          textDecoration: 'none',
+                          fontSize: '14px',
+                          fontWeight: '600'
                         }}
                         href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor"
                       >
@@ -780,10 +780,10 @@ export default function Home() {
                       href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor"
                       className="edu-btn btn-secondary btn-small"
                       style={{
-                        textDecoration: "none",
+                        textDecoration: 'none'
                       }}
                     >
-                      Дэлгэрэнгүй{" "}
+                      Дэлгэрэнгүй{' '}
                       <i className="material-icons">arrow_forward</i>
                     </Link>
                   </div>
@@ -813,9 +813,9 @@ export default function Home() {
                     <h6 className="title">
                       <Link
                         style={{
-                          textDecoration: "none",
-                          fontSize: "14px",
-                          fontWeight: "600",
+                          textDecoration: 'none',
+                          fontSize: '14px',
+                          fontWeight: '600'
                         }}
                         href="https://www.facebook.com/narssummercamp"
                       >
@@ -834,9 +834,9 @@ export default function Home() {
                     <h6 className="title">
                       <Link
                         style={{
-                          textDecoration: "none",
-                          fontSize: "14px",
-                          fontWeight: "600",
+                          textDecoration: 'none',
+                          fontSize: '14px',
+                          fontWeight: '600'
                         }}
                         href="https://www.facebook.com/narssummercamp"
                       >
@@ -856,10 +856,10 @@ export default function Home() {
                       href="https://www.facebook.com/narssummercamp"
                       className="edu-btn btn-secondary btn-small"
                       style={{
-                        textDecoration: "none",
+                        textDecoration: 'none'
                       }}
                     >
-                      Дэлгэрэнгүй{" "}
+                      Дэлгэрэнгүй{' '}
                       <i className="material-icons">arrow_forward</i>
                     </Link>
                   </div>
@@ -878,7 +878,7 @@ export default function Home() {
               href="https://www.facebook.com/narssummercamp"
               className="edu-btn"
               style={{
-                textDecoration: "none",
+                textDecoration: 'none'
               }}
             >
               Бүх хөтөлбөрүүд<i className="material-icons">arrow_forward</i>
@@ -897,7 +897,7 @@ export default function Home() {
           >
             <h2
               className="title"
-              style={{ fontSize: "28px", fontWeight: "700" }}
+              style={{ fontSize: '28px', fontWeight: '700' }}
             >
               Эцэг эхийн булан
             </h2>
@@ -928,7 +928,7 @@ export default function Home() {
                         href="/parents-detail"
                         className="btn-icon-round"
                         style={{
-                          textDecoration: "none",
+                          textDecoration: 'none'
                         }}
                       >
                         <i className="material-icons">arrow_forward</i>
@@ -938,9 +938,9 @@ export default function Home() {
                       <Link
                         href="/parents-detail"
                         style={{
-                          textDecoration: "none",
-                          fontSize: "16px",
-                          fontWeight: "600",
+                          textDecoration: 'none',
+                          fontSize: '16px',
+                          fontWeight: '600'
                         }}
                       >
                         Зусланд амрагч хүүхдийн бэлдэх зүйлс :
@@ -981,7 +981,7 @@ export default function Home() {
                         href="/parents-detail"
                         className="btn-icon-round"
                         style={{
-                          textDecoration: "none",
+                          textDecoration: 'none'
                         }}
                       >
                         <i className="material-icons">arrow_forward</i>
@@ -991,9 +991,9 @@ export default function Home() {
                       <Link
                         href="/parents-detail"
                         style={{
-                          textDecoration: "none",
-                          fontSize: "16px",
-                          fontWeight: "600",
+                          textDecoration: 'none',
+                          fontSize: '16px',
+                          fontWeight: '600'
                         }}
                       >
                         Зусланд амрагч хүүхдийн мөрдөх дүрэм :
@@ -1031,7 +1031,7 @@ export default function Home() {
                         <i
                           className="material-icons"
                           style={{
-                            textDecoration: "none",
+                            textDecoration: 'none'
                           }}
                         >
                           arrow_forward
@@ -1042,9 +1042,9 @@ export default function Home() {
                       <Link
                         href="/parents-detail"
                         style={{
-                          textDecoration: "none",
-                          fontSize: "16px",
-                          fontWeight: "600",
+                          textDecoration: 'none',
+                          fontSize: '16px',
+                          fontWeight: '600'
                         }}
                       >
                         Зусланд амрагч хүүхэд эцэг эхчүүдийн анхаарах зүйлс :
@@ -1150,8 +1150,8 @@ export default function Home() {
                 <h2
                   className="title text-center"
                   style={{
-                    fontSize: "28px",
-                    fontWeight: "700",
+                    fontSize: '28px',
+                    fontWeight: '700'
                   }}
                 >
                   Хамтрагч байгууллагууд
