@@ -1,13 +1,13 @@
-'use client';
-import React, { use } from 'react';
-import Link from 'next/link';
-import { useState } from 'react';
+"use client";
+import React, { use } from "react";
+import Link from "next/link";
+import { useState } from "react";
 
 export default function Header() {
   const [isClick, setIsClick] = useState(false);
 
   const handleClick = () => {
-    setIsClick(previousState => !previousState);
+    setIsClick((previousState) => !previousState);
   };
   return (
     <header className="edu-header header-style-1 header-fullwidth">
@@ -137,7 +137,7 @@ export default function Header() {
           </ul>
         </div>
       ) : (
-        ''
+        ""
       )}
     </header>
   );
