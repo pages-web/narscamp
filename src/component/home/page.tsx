@@ -806,10 +806,7 @@ export default function Home() {
                       href="https://www.facebook.com/narssummercamp"
                       id="idw5jz"
                     >
-                      <img
-                        src="https://narscamp.api.erxes.io/api/read-file?key=erxes-saas/B9VLVoNJ4MoQLY6Q9n4Fj2.jpg"
-                        alt="Course Meta"
-                      />
+                      <img src="/images/hulugt-togloom.jpg" alt="Course Meta" />
                     </Link>
                   </div>
                   <div className="content">
