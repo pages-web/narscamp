@@ -13,7 +13,7 @@ export default function ParentsDetail() {
           <div className="breadcrumb-inner">
             <ul className="edu-breadcrumb">
               <li className="breadcrumb-item text-white">
-                <a href="home">Нүүр хуудас</a>
+                <a href="/">Нүүр хуудас</a>
               </li>
               <li className="separator">
                 <i className="material-icons text-white">arrow_forward_ios </i>
@@ -246,7 +246,7 @@ export default function ParentsDetail() {
         </div>
       </section>
 
-      <div id="#contact" className="home-one-cta-two cta-area-1">
+      <div className="home-one-cta-two cta-area-1">
         <div className="container">
           <div className="row justify-content-center px-50">
             <div className="col-xl-8">

@@ -1383,7 +1383,7 @@ export default function Home() {
         </ul>
       </div>
 
-      <div id="contact" className="home-one-cta-two cta-area-1">
+      <div className="home-one-cta-two cta-area-1">
         <div className="container">
           <div className="row justify-content-center px-50">
             <div className="col-xl-8">

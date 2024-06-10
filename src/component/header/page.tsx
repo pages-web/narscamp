@@ -37,7 +37,7 @@ export default function Header() {
                     <Link href="/">Нүүр</Link>
                   </li>
                   <li>
-                    <Link href="#about">Бидний Тухай</Link>
+                    <Link href="/about">Бидний Тухай</Link>
                   </li>
                   <li>
                     <Link href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&utm_campaign=designshare&utm_medium=link&utm_source=editor">
@@ -45,7 +45,7 @@ export default function Header() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="#club" id="i0aa9">
+                    <Link href="/club" id="i0aa9">
                       Клубүүд
                     </Link>
                   </li>
@@ -58,7 +58,7 @@ export default function Header() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="#contact">Холбоо барих</Link>
+                    <Link href="/contact">Холбоо барих</Link>
                   </li>
                 </ul>
               </nav>
@@ -99,12 +99,12 @@ export default function Header() {
         <div className="mobile-menu mto-10 p-10 w-300 bg-main ml-300">
           <ul>
             <li>
-              <Link href="https://narscamp.mn/" className="text-white">
+              <Link href="/" className="text-white">
                 Нүүр
               </Link>
             </li>
             <li>
-              <Link href="#about" className="text-white">
+              <Link href="/about" className="text-white">
                 Бидний Тухай
               </Link>
             </li>
@@ -117,7 +117,7 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link href="#club" className="text-white">
+              <Link href="/club" className="text-white">
                 Клубүүд
               </Link>
             </li>
@@ -130,7 +130,7 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link href="#contact" className="text-white">
+              <Link href="/contact" className="text-white">
                 Холбоо барих
               </Link>
             </li>

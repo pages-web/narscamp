@@ -54,13 +54,13 @@ export default function Footer() {
                 <div className="inner">
                   <ul className="footer-link link-hover">
                     <li>
-                      <a href="#about">Бидний тухай</a>
+                      <a href="/about">Бидний тухай</a>
                     </li>
                     <li>
-                      <a href="#club">Клубүүд</a>
+                      <a href="/club">Клубүүд</a>
                     </li>
                     <li>
-                      <a href="#contact">Холбоо барих</a>
+                      <a href="/contact">Холбоо барих</a>
                     </li>
                     <li>
                       <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPnOx6MA4EOijexuRPdz70OqKzumzdEAjGc9yXqTfd17FPDA/viewform">
