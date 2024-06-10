@@ -866,6 +866,305 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
+            <div
+              data-sal-delay="150"
+              data-sal="slide-up"
+              data-sal-duration="800"
+              className="col-md-6 col-xl-3 sal-animate"
+            >
+              <div className="edu-course course-style-1 hover-button-bg-white">
+                <div className="inner">
+                  <div className="thumbnail">
+                    <Link
+                      href="https://www.facebook.com/narssummercamp"
+                      id="idw5jz"
+                    >
+                      <img src="/images/baga-olimp.jpg" alt="Course Meta" />
+                    </Link>
+                  </div>
+                  <div className="content">
+                    <h6 className="title">
+                      <Link
+                        style={{
+                          textDecoration: "none",
+                          fontSize: "14px",
+                          fontWeight: "600",
+                        }}
+                        href="https://www.facebook.com/narssummercamp"
+                      >
+                        Бага олимп
+                      </Link>
+                    </h6>
+                  </div>
+                </div>
+                <div className="course-hover-content-wrapper">
+                  <button className="wishlist-btn">
+                    <i className="icon-22"></i>
+                  </button>
+                </div>
+                <div className="course-hover-content">
+                  <div className="content">
+                    <h6 className="title">
+                      <Link
+                        style={{
+                          textDecoration: "none",
+                          fontSize: "14px",
+                          fontWeight: "600",
+                        }}
+                        href="https://www.facebook.com/narssummercamp"
+                      >
+                        Бага олимп
+                      </Link>
+                    </h6>
+                    <p id="if38dh">
+                      Зуслангийн мини бага олимп нь ээлж бүрийн онцлогоос
+                      хамаарч ганцаарчилсан болон багаар оролцох 6-10 спортын
+                      төрлөөр зохион байгуулагддаг.
+                    </p>
+                    <Link
+                      href="https://www.facebook.com/narssummercamp"
+                      className="edu-btn btn-secondary btn-small"
+                      style={{
+                        textDecoration: "none",
+                      }}
+                    >
+                      Дэлгэрэнгүй{" "}
+                      <i className="material-icons">arrow_forward</i>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              data-sal-delay="150"
+              data-sal="slide-up"
+              data-sal-duration="800"
+              className="col-md-6 col-xl-3 sal-animate"
+            >
+              <div className="edu-course course-style-1 hover-button-bg-white">
+                <div className="inner">
+                  <div className="thumbnail">
+                    <Link
+                      href="https://www.facebook.com/narssummercamp"
+                      id="idw5jz"
+                    >
+                      <img
+                        src="/images/baharhaliin-udur.jpg"
+                        style={{ width: "300px", height: "180px" }}
+                        alt="Course Meta"
+                      />
+                    </Link>
+                  </div>
+                  <div className="content">
+                    <h6 className="title">
+                      <Link
+                        style={{
+                          textDecoration: "none",
+                          fontSize: "14px",
+                          fontWeight: "600",
+                        }}
+                        href="https://www.facebook.com/narssummercamp"
+                      >
+                        Монгол бахархлын хөтөлбөр
+                      </Link>
+                    </h6>
+                  </div>
+                </div>
+                <div className="course-hover-content-wrapper">
+                  <button className="wishlist-btn">
+                    <i className="icon-22"></i>
+                  </button>
+                </div>
+                <div className="course-hover-content">
+                  <div className="content">
+                    <h6 className="title">
+                      <Link
+                        style={{
+                          textDecoration: "none",
+                          fontSize: "14px",
+                          fontWeight: "600",
+                        }}
+                        href="https://www.facebook.com/narssummercamp"
+                      >
+                        Монгол бахархлын хөтөлбөр
+                      </Link>
+                    </h6>
+                    <p id="if38dh">
+                      Монгол хүн байх, Монгол хүн эх орноороо бахархах үзэл
+                      хандлагийг төлөвшүүлэх, амрагч хүүхэд багачуудад Монголын
+                      ёс заншил, түүх, дурсгалт газар болон ардын аман зохиол,
+                      аж амьдралын хэв маяг, өв соёлыг өвлүүлэн үлдээх,
+                      танилцуулах зорилгоор хөтөлбөрийг хэрэгжүүлдэг.
+                    </p>
+                    <Link
+                      href="https://www.facebook.com/narssummercamp"
+                      className="edu-btn btn-secondary btn-small"
+                      style={{
+                        textDecoration: "none",
+                      }}
+                    >
+                      Дэлгэрэнгүй{" "}
+                      <i className="material-icons">arrow_forward</i>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              data-sal-delay="150"
+              data-sal="slide-up"
+              data-sal-duration="800"
+              className="col-md-6 col-xl-3 sal-animate"
+            >
+              <div className="edu-course course-style-1 hover-button-bg-white">
+                <div className="inner">
+                  <div className="thumbnail">
+                    <Link
+                      href="https://www.facebook.com/narssummercamp"
+                      id="idw5jz"
+                    >
+                      <img
+                        src="/images/ragbi.png"
+                        style={{ width: "300px", height: "180px" }}
+                        alt="Course Meta"
+                      />
+                    </Link>
+                  </div>
+                  <div className="content">
+                    <h6 className="title">
+                      <Link
+                        style={{
+                          textDecoration: "none",
+                          fontSize: "14px",
+                          fontWeight: "600",
+                        }}
+                        href="https://www.facebook.com/narssummercamp"
+                      >
+                        Рагби
+                      </Link>
+                    </h6>
+                  </div>
+                </div>
+                <div className="course-hover-content-wrapper">
+                  <button className="wishlist-btn">
+                    <i className="icon-22"></i>
+                  </button>
+                </div>
+                <div className="course-hover-content">
+                  <div className="content">
+                    <h6 className="title">
+                      <Link
+                        style={{
+                          textDecoration: "none",
+                          fontSize: "14px",
+                          fontWeight: "600",
+                        }}
+                        href="https://www.facebook.com/narssummercamp"
+                      >
+                        Рагби
+                      </Link>
+                    </h6>
+                    <p id="if38dh">
+                      Олон улсын рагбигийн холбооноос анх хүүхэд багачуудад
+                      зориулан хүүхдийн зусланд хэрэгжүүлж эхэлсэн.Рагбигийн
+                      спорт нь хурд хүч, авъяас чадвараас гадна амжилт гаргах
+                      хамгийн том үндэс суурь болох багийн ажиллагаа, харилуан
+                      хүндэтгэл, эв нэгдэл,тамирчин хүний ёс зүй, зарчимч
+                      байдлыг бий болгодог.
+                    </p>
+                    <Link
+                      href="https://www.facebook.com/narssummercamp"
+                      className="edu-btn btn-secondary btn-small"
+                      style={{
+                        textDecoration: "none",
+                      }}
+                    >
+                      Дэлгэрэнгүй{" "}
+                      <i className="material-icons">arrow_forward</i>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              data-sal-delay="150"
+              data-sal="slide-up"
+              data-sal-duration="800"
+              className="col-md-6 col-xl-3 sal-animate"
+            >
+              <div className="edu-course course-style-1 hover-button-bg-white">
+                <div className="inner">
+                  <div className="thumbnail">
+                    <Link
+                      href="https://www.facebook.com/narssummercamp"
+                      id="idw5jz"
+                    >
+                      <img
+                        src="/images/surgalt.png"
+                        style={{ width: "300px", height: "180px" }}
+                        alt="Course Meta"
+                      />
+                    </Link>
+                  </div>
+                  <div className="content">
+                    <h6 className="title">
+                      <Link
+                        style={{
+                          textDecoration: "none",
+                          fontSize: "14px",
+                          fontWeight: "600",
+                        }}
+                        href="https://www.facebook.com/narssummercamp"
+                      >
+                        Клубуудын сургалт
+                      </Link>
+                    </h6>
+                  </div>
+                </div>
+                <div className="course-hover-content-wrapper">
+                  <button className="wishlist-btn">
+                    <i className="icon-22"></i>
+                  </button>
+                </div>
+                <div className="course-hover-content">
+                  <div className="content">
+                    <h6 className="title">
+                      <Link
+                        style={{
+                          textDecoration: "none",
+                          fontSize: "14px",
+                          fontWeight: "600",
+                        }}
+                        href="https://www.facebook.com/narssummercamp"
+                      >
+                        Клубуудын сургалт
+                      </Link>
+                    </h6>
+                    <p id="if38dh">
+                      Клубын хөтөлбөр нь хүүхэд бүрийн сонихол, авъяас нь өөр
+                      өөр байлаг учраас өөрийгөө нээн хөгжүүлэх, танин мэдэх
+                      зорилгоор сонирхсон клубд хамрагдах боломжыг бүрдүүлж
+                      өгдөг.Зусланд амрах хугацаанд өдөрт 1-2 цагаар
+                      хичээлэлдэг.
+                    </p>
+                    <Link
+                      href="https://www.facebook.com/narssummercamp"
+                      className="edu-btn btn-secondary btn-small"
+                      style={{
+                        textDecoration: "none",
+                      }}
+                    >
+                      Дэлгэрэнгүй{" "}
+                      <i className="material-icons">arrow_forward</i>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <section className="bdg-sect"></section>
           <div

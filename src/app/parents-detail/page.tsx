@@ -116,7 +116,8 @@ export default function ParentsDetail() {
                   <p>
                     <img
                       alt=""
-                      src="https://office.erxes.io/gateway/read-file?key=0.56900392753806251.JPG"
+                      src="/images/parent-detail.png"
+                      style={{ width: "1300px", height: "700px" }}
                       id="iz64vy-2"
                     />
                   </p>
