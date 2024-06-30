@@ -24,11 +24,7 @@ export default function Home() {
         </div>
       </div>
       <div className="container max-w-screen-lg">
-        <img
-          id="icxrwm"
-          src="https://narscamp.api.erxes.io/api/read-file?key=erxes-saas/Log0KuyXd0Zb5xfmcwgbPNars Schedule.jpg"
-          className="w-full"
-        />
+        <img id="icxrwm" src="/images/narscamp.jpg" className="w-full" />
       </div>
 
       <div

@@ -9,6 +9,9 @@ export default function Header() {
   const handleClick = () => {
     setIsClick((previousState) => !previousState);
   };
+  const handleMenuClick = () => {
+    setIsClick(false);
+  };
   return (
     <header className="edu-header header-style-1 header-fullwidth">
       <div id="edu-sticky-placeholder"></div>
@@ -99,12 +102,16 @@ export default function Header() {
         <div className="mobile-menu mto-10 p-10 w-300 bg-main ml-300">
           <ul>
             <li>
-              <Link href="/" className="text-white">
+              <Link href="/" className="text-white" onClick={handleMenuClick}>
                 Нүүр
               </Link>
             </li>
             <li>
-              <Link href="/about" className="text-white">
+              <Link
+                href="/about"
+                className="text-white"
+                onClick={handleMenuClick}
+              >
                 Бидний Тухай
               </Link>
             </li>
@@ -112,12 +119,17 @@ export default function Header() {
               <Link
                 href="https://www.canva.com/design/DAFifbQpmbY/E8IG4W6xSYaXrB_jgmrT6Q/view?utm_content=DAFifbQpmbY&utm_campaign=designshare&utm_medium=link&utm_source=editor"
                 className="text-white"
+                onClick={handleMenuClick}
               >
                 Хөтөлбөрүүд
               </Link>
             </li>
             <li>
-              <Link href="/club" className="text-white">
+              <Link
+                href="/club"
+                className="text-white"
+                onClick={handleMenuClick}
+              >
                 Клубүүд
               </Link>
             </li>
@@ -125,12 +137,17 @@ export default function Header() {
               <Link
                 href="https://docs.google.com/forms/d/e/1FAIpQLSfPnOx6MA4EOijexuRPdz70OqKzumzdEAjGc9yXqTfd17FPDA/viewform"
                 className="text-white"
+                onClick={handleMenuClick}
               >
                 Бүртгүүлэх
               </Link>
             </li>
             <li>
-              <Link href="/contact" className="text-white">
+              <Link
+                href="/contact"
+                className="text-white"
+                onClick={handleMenuClick}
+              >
                 Холбоо барих
               </Link>
             </li>
